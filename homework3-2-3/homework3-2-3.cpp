@@ -10,7 +10,7 @@ struct adress
     int index = 0;
 };
 
-void printAdress(int adress_count, adress& adr)
+void printAdress(adress& adr)
 {
     std::cout << "Город: " << adr.city << std::endl;
     std::cout << "Улица: " << adr.street << std::endl;
@@ -44,7 +44,7 @@ int main()
 
     for (int i = 0; i < adress_count; i++)
     {
-        printAdress(adress_count, adr[i]);
+        printAdress(adr[i]);
     }
 
     return 0;
