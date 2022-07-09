@@ -47,5 +47,6 @@ int main()
         printAdress(adr[i]);
     }
 
+    delete[] adr;
     return 0;
 }
